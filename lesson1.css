@@ -1,0 +1,151 @@
+/* CSS - Каскадные таблицы стилей. Они отвечают за внешний вид элементов на странице.
+   CSS позволяет задавать цвета, шрифты, размеры, позиционирование, анимации и многое другое.
+   Здесь мы продемонстрируем базовые возможности CSS. */
+
+/* Стили для body - основного контейнера страницы */
+body {
+  font-family: Arial, sans-serif; /* Шрифт для всего текста */
+  background-color: #f0f0f0; /* Фоновый цвет страницы */
+  margin: 20px; /* Отступы от краев */
+  line-height: 1.6; /* Высота строки для лучшей читаемости */
+}
+
+/* Стили для заголовков */
+h1 {
+  color: lightsalmon; /* Цвет текста */
+  text-align: center; /* Выравнивание по центру */
+  font-size: 2em; /* Размер шрифта */
+  margin-bottom: 20px; /* Отступ снизу */
+  transition: color 0.3s; /* Плавный переход цвета при изменении */
+}
+
+h1:hover {
+  color: lightcoral; /* Цвет при наведении мыши - демонстрация псевдокласса :hover */
+}
+
+h2 {
+  color: #333; /* Темный цвет для подзаголовка */
+  border-bottom: 2px solid lightsalmon; /* Линия под заголовком */
+  padding-bottom: 10px; /* Отступ от линии */
+}
+
+/* Стили для параграфов */
+p {
+  color: lightcoral; /* Цвет текста */
+  font-size: 1.1em; /* Размер шрифта */
+}
+
+/* Стили для списков */
+ul {
+  background-color: white; /* Белый фон для списка */
+  padding: 15px; /* Внутренние отступы */
+  border-radius: 5px; /* Закругленные углы */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Тень для объема */
+}
+
+li {
+  color: lightsalmon; /* Цвет текста пунктов */
+  margin-bottom: 5px; /* Отступ между пунктами */
+  cursor: pointer; /* Курсор при наведении */
+  transition: background-color 0.3s; /* Плавный переход фона */
+}
+
+li:hover {
+  background-color: #ffe4e1; /* Светло-розовый фон при наведении */
+}
+
+/* Специальный стиль для одного пункта */
+#specialItem {
+  font-weight: bold; /* Жирный шрифт */
+  text-decoration: underline; /* Подчеркивание */
+}
+
+/* Стили для цитаты */
+blockquote {
+  background-color: #fffacd; /* Светло-желтый фон */
+  border-left: 5px solid lightsalmon; /* Левая граница */
+  padding: 10px 20px; /* Отступы */
+  margin: 20px 0; /* Вертикальные отступы */
+  font-style: italic; /* Курсив */
+}
+
+/* Стили для формы */
+fieldset {
+  background-color: white; /* Белый фон */
+  border: 2px solid lightcoral; /* Граница */
+  border-radius: 8px; /* Закругленные углы */
+  padding: 20px; /* Внутренние отступы */
+  margin: 20px 0; /* Вертикальные отступы */
+}
+
+legend {
+  color: lightcoral; /* Цвет заголовка формы */
+  font-weight: bold; /* Жирный шрифт */
+  padding: 0 10px; /* Отступы */
+}
+
+/* Стили для меток */
+label {
+  display: block; /* Блоковое отображение */
+  margin-top: 10px; /* Отступ сверху */
+  color: #333; /* Цвет текста */
+  font-weight: bold; /* Жирный шрифт */
+}
+
+/* Стили для полей ввода */
+input, select {
+  width: 100%; /* Полная ширина */
+  padding: 8px; /* Внутренние отступы */
+  margin-top: 5px; /* Отступ сверху */
+  border: 1px solid #ccc; /* Граница */
+  border-radius: 4px; /* Закругленные углы */
+  box-sizing: border-box; /* Учитывать padding в ширине */
+}
+
+input:focus, select:focus {
+  border-color: lightsalmon; /* Цвет границы при фокусе */
+  outline: none; /* Убрать стандартный outline */
+  box-shadow: 0 0 5px rgba(255,160,122,0.5); /* Тень при фокусе */
+}
+
+/* Стили для кнопок */
+button {
+  background-color: lightsalmon; /* Фоновый цвет */
+  color: white; /* Цвет текста */
+  border: none; /* Без границы */
+  padding: 10px 20px; /* Отступы */
+  margin: 10px 5px 0 0; /* Отступы */
+  border-radius: 4px; /* Закругленные углы */
+  cursor: pointer; /* Курсор при наведении */
+  transition: background-color 0.3s; /* Плавный переход */
+}
+
+button:hover {
+  background-color: lightcoral; /* Темнее при наведении */
+}
+
+.sent-btn {
+  background-color: lightcoral; /* Специальный цвет для кнопки отправки */
+}
+
+.sent-btn:hover {
+  background-color: #ff6b6b; /* Еще темнее */
+}
+
+/* Адаптивность - стили для маленьких экранов */
+@media (max-width: 600px) {
+  body {
+    margin: 10px; /* Меньшие отступы на мобильных */
+  }
+  
+  h1 {
+    font-size: 1.5em; /* Меньший размер заголовка */
+  }
+  
+  input, select, button {
+    font-size: 16px; /* Предотвращает зум на iOS */
+  }
+  .sent-btn {
+    background-color: rgb(0, 121, 60);
+  }
+}

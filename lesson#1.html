@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Урок по CSS и JS</title>
+    <link rel="stylesheet" href="lesson1.css">
+</head>
+<body>
+    <h1>Заголовок №1</h1>
+    <p>Это параграф с сильным текстом: <strong>выделенный текст</strong>.</p>
+    
+    <h2>Список пунктов</h2>
+    <ul id="myList">
+        <li>Пункт №1: Описание пункта №1</li>
+        <li>Пункт №2: Описание пункта №2</li>
+        <li id="specialItem">Пункт №3: Описание пункта №3</li>
+    </ul>
+    
+    <blockquote>
+        <p>Цитата: Описание цитаты "1234567890"</p>
+    </blockquote>
+    
+    <fieldset>
+        <legend>Форма регистрации</legend>
+        <form id="myForm">
+            <label for="input">Имя:</label>
+            <input type="text" id="input" placeholder="Введите ваше имя" required>
+            
+            <label for="textarea">Фамилия:</label>
+            <input type="text" id="textarea" placeholder="Введите вашу фамилию" required>
+            
+            <label for="select">Выберите пол:</label>
+            <select id="select">
+                <option value="male">Мужской</option>
+                <option value="female">Женский</option>
+            </select>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="Email" placeholder="example@gmail.com" required>
+            
+            <button class="sent-btn" type="submit">Отправить</button>
+            <button type="reset">Очистить</button>
+        </form>
+    </fieldset>
+    
+    <button id="addItemBtn">Добавить новый пункт в список</button>
+    <button id="changeColorBtn">Изменить цвет заголовка</button>
+    
+    <script src="lesson1.js"></script>
+</body>
+</html>

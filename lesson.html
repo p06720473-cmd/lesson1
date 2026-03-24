@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Урок №1 - Основные теги и функционал</title>
+    <link rel="stylesheet" href="lesson.css">
+
+</head>
+<body>
+    <!-- ЗАГОЛОВКИ -->
+    <h1 id="top">📚 Урок №1: HTML Основные теги и функционал</h1>
+    <p>Это полный пример всех основных HTML тегов для обучения</p>
+
+    <!-- ТЕКСТОВОЕ ФОРМАТИРОВАНИЕ -->
+    <div id="section1" class="section">
+        <h2>1️⃣ Текстовое форматирование</h2>
+        <p>Обычный текст в параграфе</p>
+        <p><strong>Жирный текст</strong> - используется тег &lt;strong&gt;</p>
+        <p><b>Bold текст</b> - используется тег &lt;b&gt;</p>
+        <p><em>Наклонный текст (курсив)</em> - используется тег &lt;em&gt;</p>
+        <p><i>Italic текст</i> - используется тег &lt;i&gt;</p>
+        <p><u>Подчеркнутый текст</u> - используется тег &lt;u&gt;</p>
+        <p><s>Зачеркнутый текст</s> - используется тег &lt;s&gt;</p>
+        <p>Текст с <mark>выделением</mark> - используется тег &lt;mark&gt;</p>
+        <p>Текст с <sub>нижним индексом</sub> - &lt;sub&gt;</p>
+        <p>Текст с <sup>верхним индексом</sup> - &lt;sup&gt;</p>
+    </div>
+
+    <!-- ЗАГОЛОВКИ -->
+    <div class="section">
+        <h2>2️⃣ Заголовки</h2>
+        <h1>Заголовок H1 (самый большой)</h1>
+        <h2>Заголовок H2</h2>
+        <h3>Заголовок H3</h3>
+        <h4>Заголовок H4</h4>
+        <h5>Заголовок H5</h5>
+        <h6>Заголовок H6 (самый маленький)</h6>
+    </div>
+
+    <!-- СПИСКИ -->
+    <div class="section">
+        <h2>3️⃣ Списки</h2>
+        
+        <h3>Неупорядоченный список (UL):</h3>
+        <ul>
+            <li>Первый пункт</li>
+            <li>Второй пункт</li>
+            <li>Третий пункт
+                <ul>
+                    <li>Вложенный пункт</li>
+                    <li>Еще вложенный</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>Упорядоченный список (OL):</h3>
+        <ol>
+            <li>Первый шаг</li>
+            <li>Второй шаг</li>
+            <li>Третий шаг</li>
+        </ol>
+
+        <h3>Список определений (DL):</h3>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Язык разметки для создания веб-страниц</dd>
+            <dt>CSS</dt>
+            <dd>Язык для оформления веб-страниц</dd>
+        </dl>
+    </div>
+
+    <!-- ССЫЛКИ И ИЗОБРАЖЕНИЯ -->
+    <div class="section">
+        <h2>4️⃣ Ссылки и изображения</h2>
+        <p><a href="https://github.com/" target="_blank">Ссылка на GitHub (откроется в новой вкладке)</a></p>
+        <p><a href="#top">Обычная ссылка</a></p>
+        <p><a href="#section5">Ссылка на якорь (раздел 5)</a></p>
+        
+        <h3>Изображение:</h3>
+        <img src="https://via.placeholder.com/300x200" alt="Плейсхолдер изображение" width="300" height="200">
+        <p><small>Пример изображения из интернета</small></p>
+    </div>
+
+    <!-- ТАБЛИЦА -->
+
+    <div class="section">
+        <h2>5️⃣ Таблица</h2>
+        <table border="1" cellpadding="10" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Имя</th>
+                    <th>Возраст</th>
+                    <th>Город</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Иван</td>
+                    <td>25</td>
+                    <td>Москва</td>
+                </tr>
+                <tr>
+                    <td>Анна</td>
+                    <td>23</td>
+                    <td>СПб</td>
+                </tr>
+                <tr>
+                    <td>Петр</td>
+                    <td>30</td>
+                    <td>Казань</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Всего 3 человека</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <!-- ФОРМЫ -->
+
+    <form action="">
+
+
+    </form>
+    <div class="section">
+        <h2>6️⃣ Формы - ввод данных</h2>
+        <form action="/submit" method="POST">
+            <fieldset>
+                <legend>Личные данные</legend>
+                
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" placeholder="Введите имя" required>
+                <br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                <br><br>
+
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" placeholder="Введите пароль">
+                <br><br>
+
+                <label for="age">Возраст:</label>
+                <input type="number" id="age" name="age" min="1" max="120">
+                <br><br>
+
+                <label for="birthday">Дата рождения:</label>
+                <input type="date" id="birthday" name="birthday">
+                <br><br>
+
+                <label for="color">Выберите цвет:</label>
+                <input type="color" id="color" name="color">
+                <br><br>
+
+                <label>Выберите город:</label>
+                <select name="city">
+                    <option value="">-- Выберите --</option>
+                    <option value="moscow">Москва</option>
+                    <option value="spb">Санкт-Петербург</option>
+                    <option value="kazan">Казань</option>
+                </select>
+                <br><br>
+
+                <label>Пол:</label>
+                <input type="radio" name="gender" value="male"> Мужской
+                <input type="radio" name="gender" value="female"> Женский
+                <br><br>
+
+                <label>Интересы:</label>
+                <input type="checkbox" name="hobby" value="sports"> Спорт
+                <input type="checkbox" name="hobby" value="music"> Музыка
+                <input type="checkbox" name="hobby" value="reading"> Чтение
+                <br><br>
+
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" rows="4" cols="40" placeholder="Введите текст..."></textarea>
+                <br><br>
+
+                <button type="submit">Отправить</button>
+                <button type="reset">Очистить</button>
+            </fieldset>
+        </form>
+    </div>
+
+    <!-- МУЛЬТИМЕДИА -->
+    <div class="section">
+        <h2>7️⃣ Мультимедиа</h2>
+        
+        <h3>Видео:</h3>
+        <video width="320" height="180" controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Ваш браузер не поддерживает видео 
+        </video>
+
+        <h3>Аудио:</h3>
+        <audio controls>
+            <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+            Ваш браузер не поддерживает аудио
+        </audio>
+
+        <img id="testImage" class="imgTEST" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTcTL_hJfJq9-vFZ12ED9zuMPD1cxFrfpHgA&s" alt="test" >
+    </div>
+
+    <!-- КОМПОНЕНТЫ -->
+    <div class="section">
+        <h2>8️⃣ Другие компоненты</h2>
+        
+        <h3>Цитата:</h3>
+        <blockquote>
+            "HTML - это основа веб-разработки" - Автор
+        </blockquote>
+
+        <h3>Код:</h3>
+        <code>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;/html&gt;</code>
+
+        <h3>Горизонтальная линия:</h3>
+        <hr>
+
+        <h3>Разрыв строки:</h3>
+        Строка 1<br>
+        Строка 2<br>
+        Строка 3
+
+        <h3>Неразрывный пробел и специальные символы:</h3>
+        <p>
+            &nbsp; (неразрывный пробел)<br>
+            &copy; Copyright<br>
+            &reg; Registered<br>
+            &euro; €<br>
+            &pound; £<br>
+            &cent; ¢
+        </p>
+    </div>
+
+    <!-- СЕМАНТИЧЕСКИЕ ТЕГИ -->
+    <div class="section" id="section5">
+        <h2>9️⃣ Семантические теги</h2>
+        <article>
+            <h3>Статья (Article)</h3>
+            <p>Тег &lt;article&gt; используется для содержимого, которое независимо от остальной страницы</p>
+        </article>
+
+        <section>
+            <h3>Раздел (Section)</h3>
+            <p>Тег &lt;section&gt; группирует связанный контент</p>
+        </section>
+
+        <aside>
+            <h3>Боковое содержимое (Aside)</h3>
+            <p>Дополнительная информация, не связанная напрямую с основным контентом</p>
+        </aside>
+
+        <details>
+            <summary>Нажмите для раскрытия</summary>
+            <p>Это скрытое содержимое, которое раскрывается при нажатии</p>
+        </details>
+    </div>
+
+    <!-- ПРОГРЕСС И МЕТР -->
+    <div class="section">
+        <h2>🔟 Прогресс и метр</h2>
+        
+        <h3>Progress (прогресс):</h3>
+        <progress value="70" max="100"></progress> 70%
+        
+        <h3>Meter (измеритель):</h3>
+        <meter value="6" min="0" max="10"></meter> 6 из 10
+    </div>
+
+    <!-- КОММЕНТАРИЙ -->
+    <div class="section">
+        <h2>Комментарии HTML</h2>
+        <p>Комментарии не видны на странице, но видны в исходном коде!</p>
+        <!-- Это комментарий - его не видно на странице -->
+    </div>
+
+    <hr>
+    <footer>
+        <p><small>© 2026 HTML Урок №1 | Создано для обучения</small></p>
+    </footer>
+</body>
+</html>
